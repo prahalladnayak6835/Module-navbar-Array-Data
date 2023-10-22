@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    
+    
+    <div class="containers">
+        <h2>Do Refresh for sign in and sign up</h2>
+        </div>
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="container">
+                <h2>Login and Register</h2>
+                <div class="tabs">
+                    <button class="tab" id="loginTab" onclick="showLoginForm()">Login</button>
+                    <button class="tab" id="registerTab" onclick="showRegisterForm()">Register</button>
+                </div>
+                <div id="loginForm" style="display: none;">
+                    <form action="#" method="post">
+                        <!-- Your form content here -->
+                        <div class="input-container">
+                            <label for="usernameOrEmail">Username or Email</label>
+                            <input type="text" id="usernameOrEmail" name="usernameOrEmail" placeholder="Enter Username or Email" required>
+                        </div>
+                        <div class="input-container">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+                        </div>
+                        <div class="remember-forgot">
+                            <label for="rememberMe"> Remember Me<input type="checkbox" id="rememberMe" name="rememberMe" title="Google"></label>
+                            <a href="#"  title="Forgot Password">Forgot Password?</a>
+                        </div>
+                        <div class="input-container">
+                            <button type="button" class="btn" onclick="register()">Register</button>
+                        </div>
+                </div>
+
+                <br>
+                <div id="registerForm" style="display: none;">
+                    <form>
+                        <div class="input-container">
+                            <label for="email">Email Id:</label>
+                            <input type="text" id="email" name="email" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="input-container">
+                            <label for="phoneNumber">Phone Number:</label>
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your Phone Number"
+                                required>
+                        </div>
+                        <div class="input-container">
+                            <label for="newUsername">New Username:</label>
+                            <input type="text" id="newUsername" name="newUsername" placeholder="Enter your new username"
+                                required>
+                        </div>
+                        <div class="input-container">
+                            <label for="newPassword">New Password:</label>
+                            <input type="password" id="newPassword" name="newPassword"
+                                placeholder="Enter your new password" required>
+                        </div>
+                        <div class="input-container">
+                            <button type="button" class="btn" onclick="register()">Register</button>
+                        </div>
+                    </form>
+                </div>
+
+            
+            <div class="social-links">
+                <div class="social-link">
+                    <p>Or sign in with</p>
+                    <a href="#"><img src="google-logo.png" alt="Google" title="Google"></a>
+                    <a href="#"><img src="fb.png" alt="Facebook" title="Facebook"></a>
+                    <a href="#"><img src="linkedin-logo.png" alt="LinkedIn" title="LinkedIn"></a>
+                    <a href="#"><img src="github-logo.png" alt="GitHub" title="GitHub"></a>
+                    </div>
+            </div>
+        </div>
+
+       
+</body>
+
+</html>

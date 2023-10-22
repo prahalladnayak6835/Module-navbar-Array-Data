@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3.css">
+    <title>Advanced Modal</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>Please log in to your account to access our services.</p>
+
+    <!-- <button id="openModalBtn">Open Modal</button> -->
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="closeModal">&times;</span>
+            <h2> Do Sign Up </h2>
+            <form id="signupForm">
+                <input type="text" placeholder="Username" id="username">
+                <input type="email" placeholder="Email" id="email">
+                <input type="password" placeholder="Password" id="password">
+                <input type="tel" placeholder="Phone Number" id="phone">
+                <button type="submit">Sign Up</button>
+                <button type="submit">Register</button>
+            </form>
+
+<div class="social-login">
+    <button id="googleLogin">
+        <img src="images/google.png" alt="Google Logo">
+    </button>
+    <button id="facebookLogin">
+        <img src="images/facebook-logo.png" alt="Facebook Logo">
+    </button>
+    <button id="githubLogin">
+        <img src="images/github-logo.png" alt="GitHub Logo">
+    </button>
+</div>
+
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+</html>

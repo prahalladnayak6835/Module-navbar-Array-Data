@@ -1,0 +1,177 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    text-align: center;
+}
+
+.container{
+    width : 1024px ;
+    margin : auto;
+    text-decoration: wavy;
+}
+
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+.input-container {
+    margin-bottom: 15px;
+}
+
+label {
+    display: flex;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding: 8px;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.remember-forgot a {
+  color: blue;
+  text-decoration: none;
+  padding-right: 8px;
+}
+
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 380px;
+}
+
+.popup-close {
+    /* position: absolute; */
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+    padding-left: 350px;
+    
+}
+.popup-close:hover{
+    transform:translateY(-3px);
+    font-weight: bold;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-link p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: medium;
+    font-style: initial;
+    text-align: center;
+}
+
+.social-link img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+    border-radius: 50%;
+    padding: 30px;
+    
+}
+
+
+.social-link img:hover {
+    transform: translateY(-10px);
+}
+
+
+
+/* now */
+
+
+/* CSS for the popup container */
+.popup-container {
+    /* background-color: #f2f2f2; */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0,0.1);
+}
+
+/* CSS for the popup itself */
+.popup {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+}
+
+/* Add more styles as needed for your form and social links */
+
+.create-button{
+    color: #fff;
+    background-color: #f71818;
+    display: inline-block;
+    border: 2px solid gray;
+    width: 350px;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    transform: translateZ(10px);
+    vertical-align: middle;
+    padding-top:10px ;
+    
+    
+}
+.create-button:hover{
+    color: #fff;
+    background-color: #f71818;
+    display: inline-block;
+    border: 2px solid gray;
+    width: 350px;
+    height: 30px;
+    border-radius: 7px;
+    text-align: center;
+    text-decoration: none;
+    transform:translateY(-5px);
+}

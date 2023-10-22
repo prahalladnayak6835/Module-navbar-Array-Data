@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Refresh to get The Popup window</h2>
+        </div>
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <div class="container">
+                <h2>Login and Register</h2>
+                <div class="tabs">
+                    <button class="tab" id="loginTab" onclick="showLoginForm()">Login</button>
+                    <button class="tab" id="registerTab" onclick="showRegisterForm()">Register</button>
+                </div>
+                <div id="loginForm">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" placeholder="Enter your password"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn" onclick="login()">Login</button>
+                        </div>
+                    </form>
+                </div>
+                <br>
+                <div id="registerForm" style="display: none;">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Email Id:</label>
+                            <input type="text" id="email" name="email" placeholder="Enter your email"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number:</label>
+                            <input type="text" id="phoneNumber" name="phoneNumber" placeholder="Enter your Phone Number"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newUsername">New Username:</label>
+                            <input type="text" id="newUsername" name="newUsername" placeholder="Enter your new username"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="newPassword">New Password:</label>
+                            <input type="password" id="newPassword" name="newPassword"
+                                placeholder="Enter your new password" required>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn" onclick="register()">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="social-buttons">
+                    <a href="#" class="social-button google-button">Login with Google</a>
+                    <br><br>
+                    <a href="#" class="social-button LinkedIn-button">Login with LinkedIn</a>
+                </div>
+            </div>
+
+           
+</body>
+
+</html>

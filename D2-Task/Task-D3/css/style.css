@@ -1,0 +1,48 @@
+/* Style for the dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the button that triggers the dropdown */
+.dropdown button {
+    background-color: #84898c;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 500px;
+}
+
+/* Style for the dropdown content */
+.dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 500px;
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    z-index: 1;
+    border: 1px solid #ddd;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+
+/* Style for the dropdown items */
+.dropdown .dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.dropdown .dropdown-content ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}

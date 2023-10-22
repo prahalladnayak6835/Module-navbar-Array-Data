@@ -1,0 +1,176 @@
+/* Default styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #fcfcfc, #000000);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(102, 99, 99, 0.9);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 253, 253, 0.3);
+    text-align: center;
+    padding: 20px;
+    width: 350px;
+}
+
+.container h2 {
+    color: #fffafa;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.tab {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    background-color: #fff;
+    color: #333;
+}
+
+.tab.active {
+    background-color: #070606;
+    color: #fff;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #dedcd8;
+    font-size: 16px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-bottom: 2px solid #fafafb;
+    background-color: transparent;
+    color: #aca8a8;
+    font-size: 16px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: #aca8a8;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #cccccc;
+}
+
+.social-buttons {
+    margin-top: 20px;
+}
+
+.social-button {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: transform 0.3s ease;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.social-button:hover {
+    transform: scale(1.05);
+    background-color: #cccccc;
+}
+
+.google-button {
+    background-color: #74ea35;
+    color: #fff;
+}
+
+.LinkedIn-button {
+    background-color: #408de4;
+    color: #fff;
+}
+.overlay {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:linear-gradient(135deg, #fcfcfc, #9d9d9d);
+    z-index: 1;
+}
+
+.popup {
+    position: relative;
+    max-width: 400px;
+    margin: 100px auto;
+    background-color: rgba(11, 11, 1, 0.9);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(248, 248, 248, 0.3);
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #f7f7f7;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .tab {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .social-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}

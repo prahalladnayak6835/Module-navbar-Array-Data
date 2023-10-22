@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to My Website</h1>
+        <p>Please log in to your account to access our services.</p>
+    <!-- Container for the popup -->
+    <div class="popup-container" id="popup-container">
+        <div class="popup" id="popup">
+            <span class="close" id="closeModal">&times;</span>
+           
+            <h1>Sign In</h1>
+            <form action="#" method="post">
+                <!-- Your form content here -->
+                <div class="input-container">
+                    <label for="usernameOrEmail">Username or Email</label>
+                    <input type="text" id="usernameOrEmail" name="usernameOrEmail" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="remember-forgot">
+                    <label for="rememberMe"> Remember Me<input type="checkbox" id="rememberMe" name="rememberMe" title="Google"></label>
+                    <a href="#"  title="Forgot Password">Forgot Password?</a>
+                </div>
+                <button type="submit">Sign In</button>
+            </form>
+            <div class="social-links">
+                <!-- Social login links here -->
+                <div class="social-link">
+                    <p>Or sign in with</p>
+                    <a href="#"><img src="google-logo.png" alt="Google" title="Google"></a>
+                    <a href="#"><img src="fb.png" alt="Facebook" title="Facebook"></a>
+                    <a href="#"><img src="linkedin-logo.png" alt="LinkedIn" title="LinkedIn"></a>
+                    <a href="#"><img src="github-logo.png" alt="GitHub" title="GitHub"></a>
+                    </div>
+            </div>
+            <p>Don't have an account? </p>
+            <a href="create_account.html" class="create-button" title="Create an account">Create an Account</a>
+        </div>
+    </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
